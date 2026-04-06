@@ -5,37 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prathmesh Raut</title>
 <link rel="stylesheet" href="styles.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <div class="container">
 
-<header>
+<header class="glass fade-in">
   <h1>Prathmesh Raut</h1>
 
   <div class="top-contact">
-    <span>Email: prathameshraut02@gmail.com</span>
-    <span> | </span>
-    <span>Phone: +91 9822896105</span>
+    <span><i class="fas fa-envelope"></i> prathameshraut02@gmail.com</span>
+    <span><i class="fas fa-phone"></i> +91 9822896105</span>
   </div>
 
   <div class="buttons">
-    <a href="https://www.linkedin.com/in/prathmesh-raut-7a2a831b5/" target="_blank">LinkedIn</a>
-    <a href="resume.pdf" download>Download Resume</a>
+    <a href="https://www.linkedin.com/in/prathmesh-raut-7a2a831b5/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="resume.pdf" download>
+      <i class="fas fa-download"></i> Resume
+    </a>
   </div>
 </header>
 
-<section>
+<section class="glass fade-in">
 <h2>Summary</h2>
 <p>
-Business Development Executive with experience in stakeholder engagement, market analysis and structured problem-solving. Skilled in working with senior stakeholders, understanding business needs and contributing to growth initiatives. Interested in consulting and project-driven roles.
+Professional with experience in collaborating closely with decision-makers and stakeholders. Passionate about understanding business challenges and applying data-driven, strategic thinking to develop effective solutions and contribute to sustainable growth. With exposure to business development through practical projects and internships, I aim to build a career in roles focused on strategy, analytics and business impact within organizations.
 </p>
 </section>
 
-<section>
-<h2>Experience</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-briefcase"></i> Experience</h2>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Business Development Executive – Thomas Assessments</h3>
 <ul>
 <li>Managed business development activities including prospecting, engagement and closures</li>
@@ -46,7 +52,7 @@ Business Development Executive with experience in stakeholder engagement, market
 </ul>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Graduate Trainee – Jaro Education</h3>
 <ul>
 <li>Conducted market research and analyzed industry trends to identify opportunities</li>
@@ -57,7 +63,7 @@ Business Development Executive with experience in stakeholder engagement, market
 </ul>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Projects Intern – RK Devices</h3>
 <ul>
 <li>Coordinated meetings, workshops and training sessions</li>
@@ -69,30 +75,30 @@ Business Development Executive with experience in stakeholder engagement, market
 
 </section>
 
-<section>
-<h2>Projects</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-lightbulb"></i> Projects</h2>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Market Opportunity Analysis</h3>
 <p>Analyzed target segments and identified high-value opportunities using structured research and business insights.</p>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Client Engagement Strategy</h3>
 <p>Developed approaches to improve engagement and conversion through better understanding of customer needs.</p>
 </div>
 
 </section>
 
-<section>
-<h2>Skills</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-tools"></i> Skills</h2>
 <p>
 Business Strategy | Stakeholder Management | Client Relationship Management | Product Management | SQL | CRM Tools | MS Excel | Problem Solving | Effective Communication
 </p>
 </section>
 
-<section>
-<h2>Certifications</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-certificate"></i> Certifications</h2>
 <ul>
 <li>Career Essentials in Generative AI – Microsoft & LinkedIn</li>
 <li>Consulting Foundations: Client Management and Relationships</li>
@@ -101,27 +107,42 @@ Business Strategy | Stakeholder Management | Client Relationship Management | Pr
 </ul>
 </section>
 
-<section>
-<h2>Education</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-graduation-cap"></i> Education</h2>
 <p>
 Bachelor of Engineering (Electronics & Telecommunications, Minor in AI/ML) – Mumbai University (2024)
 </p>
 </section>
 
-<section>
-<h2>Achievements</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-trophy"></i> Achievements</h2>
 <ul>
 <li>Runner-up – Shark Tank VIT (Startup Competition)</li>
 <li>National Level Mini-Golf Participant</li>
 </ul>
 </section>
 
-<section>
-<h2>Hobbies</h2>
+<section class="glass fade-in">
+<h2><i class="fas fa-heart"></i> Hobbies</h2>
 <p>Sports | Networking | Learning about Business & Technology | Traveling</p>
 </section>
 
 </div>
+
+<!-- Scroll Animation Script -->
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+</script>
 
 </body>
 </html>
