@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2563eb, #06b6d4);
-  color: #0f172a;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #e2e8f0;
 }
 
 .container {
@@ -14,23 +14,21 @@ body {
 header {
   text-align: center;
   margin-bottom: 40px;
-  color: white;
 }
 
-.tagline {
-  max-width: 700px;
-  margin: 10px auto;
-  line-height: 1.5;
+.top-contact {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #cbd5f5;
 }
 
 .buttons a {
-  background: white;
-  color: black;
+  background: #38bdf8;
+  color: #0f172a;
   padding: 10px 15px;
   border-radius: 8px;
   margin: 5px;
   text-decoration: none;
-  display: inline-block;
   font-weight: bold;
 }
 
@@ -39,11 +37,12 @@ section {
 }
 
 h2 {
+  color: #38bdf8;
   margin-bottom: 10px;
 }
 
 .card {
-  background: white;
+  background: #1e293b;
   padding: 15px;
   border-radius: 10px;
   margin-top: 10px;
