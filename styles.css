@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #e2e8f0;
 }
 
@@ -11,43 +11,79 @@ body {
   padding: 20px;
 }
 
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
 header {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .top-contact {
-  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   font-size: 14px;
+  margin: 10px 0;
   color: #cbd5f5;
 }
 
+/* Buttons */
 .buttons a {
-  background: #38bdf8;
-  color: #0f172a;
+  display: inline-block;
+  margin: 5px;
   padding: 10px 15px;
   border-radius: 8px;
-  margin: 5px;
+  background: #38bdf8;
+  color: #0f172a;
   text-decoration: none;
+  transition: 0.3s;
   font-weight: bold;
 }
 
-section {
-  margin-bottom: 30px;
+.buttons a:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
 }
 
-h2 {
-  color: #38bdf8;
-  margin-bottom: 10px;
-}
-
+/* Cards */
 .card {
-  background: #1e293b;
+  background: rgba(255,255,255,0.05);
   padding: 15px;
   border-radius: 10px;
   margin-top: 10px;
+  transition: 0.3s;
 }
 
-ul {
-  padding-left: 18px;
+.card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(5px);
+}
+
+/* Headings */
+h2 {
+  color: #38bdf8;
+}
+
+/* Scroll animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
